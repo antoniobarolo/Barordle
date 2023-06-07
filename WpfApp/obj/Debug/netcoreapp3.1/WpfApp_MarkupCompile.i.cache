@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\App.xaml
-2-580491623
+3518334662
 
-7-1050059129
+8-872795951
 192-1533232326
-Account.xaml;MainWindow.xaml;
+Account.xaml;LoginPage.xaml;MainWindow.xaml;
 
-False
+True
 

@@ -8,6 +8,7 @@
         Title="Account" Height="450" Width="800">
 
     <Grid>
+        <Frame x:Name="Account"/>
         <Label x:Name="LoginTitle" Content="Insira seu login" HorizontalAlignment="Left" Height="43" Margin="175,153,0,0" VerticalAlignment="Top" Width="152" FontFamily="Comic Sans MS" FontSize="18"/>
         <Label x:Name="nome" Content="Barordle" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="300" HorizontalContentAlignment="Center" FontSize="36" Margin="0,10,0,0"/>
         <Button x:Name="loginButton" Content="Entrar" HorizontalAlignment="Left" Margin="522,158,0,0" VerticalAlignment="Top" FontSize="18" Height="34" Width="110" Click="loginButton_Click"/>

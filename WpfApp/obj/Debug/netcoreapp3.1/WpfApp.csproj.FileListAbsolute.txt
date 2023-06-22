@@ -81,3 +81,9 @@ D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.AssemblyInfo.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.csproj.CoreCompileInputs.cache
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.genruntimeconfig.cache
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\AccountPage.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GameScreen.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LoginPage.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\AccountPage.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GameScreen.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LoginPage.baml

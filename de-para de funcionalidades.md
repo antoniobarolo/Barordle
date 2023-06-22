@@ -4,9 +4,9 @@
    Estou realizando em Wpf.
     
 # Telas de cadastro de produtos e clientes, incluindo a validação de campos obrigatórios e a exibição de mensagens de erro.
-    Tela simples de cadastro e login de jogadores. Dentro de cada jogador, tem um CRUD de banco de palavras.
-    Validação do sign up - o nome de usuário não pode já existir.
-    Validação de sign in - o nome de usuário precisa já existir.
+ok    Tela simples de cadastro e login de jogadores. Dentro de cada jogador, tem um CRUD de banco de palavras.
+ok    Validação do sign up - o nome de usuário não pode já existir.
+ok    Validação de sign in - o nome de usuário precisa já existir.
 
 # Registro de vendas, incluindo o cálculo do valor total da venda e a atualização do estoque de produtos.
     Registro de palavras no banco, que depois é utilizada no jogo.
@@ -14,7 +14,8 @@
     Atualização = geracao de pontuacao após o jogo e soma de pontuacao do jogador.
 
 # Consulta de vendas realizadas, com a possibilidade de filtrar por data, cliente ou produto.
-    
+ok    consulta = testar palavra no jogo
+ok    filtrar = feedback com cor verde, amarela ou nenhuma para cada letra
 
 # Geração de relatórios, com a possibilidade de gerar relatórios de vendas por período, por cliente ou por produto.
     Leaderboard de todos jogadores e de pontuações individuais

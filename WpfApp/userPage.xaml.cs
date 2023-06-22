@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace WpfApp
 {
     /// <summary>
-    /// Interação lógica para LoginPage.xam
+    /// Interação lógica para userPage.xam
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class userPage : Page
     {
-        public LoginPage()
+        public userPage()
         {
             InitializeComponent();
         }

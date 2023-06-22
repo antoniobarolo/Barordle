@@ -14,7 +14,6 @@ namespace WpfApp
 
         private static List<string> defaultWords = new List<string> { "jorge", "arana", "teste" };
 
-
         public User(string name)
         {
             Name = name;

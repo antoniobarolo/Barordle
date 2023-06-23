@@ -24,7 +24,7 @@ ok    filtrar = feedback com cor verde, amarela ou nenhuma para cada letra
     CRUD de palavras e CRUD de contas pelo login 'admin'.
 
 # Autenticação de usuários, com a definição de perfis de acesso (administrador e vendedor).
-    Login 'admin' tem acesso a todo o banco de palavras.
+    Login 'admin' tem acesso a todo o banco de usuários.
 
 # Persistência de dados a vontade.
  

@@ -18,14 +18,27 @@ namespace WpfApp
     /// </summary>
     public partial class GameScreen : Page
     {
-        public GameScreen()
-        {
-            InitializeComponent();
-        }
-
+        private User currentUser;
+        string answer;
         int lives = 5;
         bool gameOn = true;
-        string answer = "JORGE";
+
+
+        public GameScreen(User user)
+        {
+            currentUser = user;
+            InitializeComponent();
+            DataContext = user;
+            answer = sortWord();
+        }
+
+        private string sortWord()
+        {
+            Random random = new Random();
+            int index = random.Next(0, currentUser.Words.Count);
+
+            return currentUser.Words[index];
+        }
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             // Verifica se o caractere digitado é uma letra do alfabeto

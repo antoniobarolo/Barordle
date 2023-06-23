@@ -24,8 +24,8 @@ namespace WpfApp
         List<User> userList = new List<User>();
         public MainWindow()
         {
-            InitializeComponent();
             userList.Add(new User(name: "admin"));
+            InitializeComponent();
         }
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
@@ -34,9 +34,10 @@ namespace WpfApp
                 MessageBox.Show("Nome de usuário inexistente.");
                 return;
             }
-
+             
             MessageBox.Show("Login com sucesso!");
-            this.Content = new GameScreen();
+            
+            this.Content = new userPage(userList.FirstOrDefault(u => u.Name == SignInText.Text));
 
         }
 

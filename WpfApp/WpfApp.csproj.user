@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AccountPage.xaml.cs">
+    <Compile Update="GameScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="GameScreen.xaml.cs">
+    <Compile Update="WordListComponent.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="userPage.xaml.cs">
@@ -13,10 +13,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AccountPage.xaml">
+    <Page Update="GameScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="GameScreen.xaml">
+    <Page Update="WordListComponent.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="userPage.xaml">

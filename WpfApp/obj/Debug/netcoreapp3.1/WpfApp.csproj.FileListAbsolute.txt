@@ -60,7 +60,6 @@ C:\Users\antonio.gargiulo\Documents\_Tech\7o-semestre\4bdotnet\Barordle\WpfApp\o
 C:\Users\antonio.gargiulo\Documents\_Tech\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.genruntimeconfig.cache
 C:\Users\antonio.gargiulo\Documents\_Tech\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\Account.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.csproj.AssemblyReference.cache
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\Account.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\App.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp_MarkupCompile.cache
@@ -73,7 +72,6 @@ D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\bin\Debug\netcoreapp3.1\WpfApp
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\bin\Debug\netcoreapp3.1\WpfApp.runtimeconfig.dev.json
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\bin\Debug\netcoreapp3.1\WpfApp.dll
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\bin\Debug\netcoreapp3.1\WpfApp.pdb
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\Account.baml
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\MainWindow.baml
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.g.resources
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.GeneratedMSBuildEditorConfig.editorconfig
@@ -81,9 +79,10 @@ D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.AssemblyInfo.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.csproj.CoreCompileInputs.cache
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WpfApp.genruntimeconfig.cache
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\AccountPage.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GameScreen.g.cs
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LoginPage.g.cs
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\AccountPage.baml
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GameScreen.baml
-D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LoginPage.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WordListComponent.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\userPage.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WordListComponent.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\userPage.baml

@@ -32,6 +32,13 @@ namespace WpfApp
        
         private void loginButton_Click(object sender, RoutedEventArgs e)
         {
+            if (SignInText.Text == "admin")
+            {
+                NavigationService?.Navigate(new adminPage());
+                MessageBox.Show("Login de administrador");
+                return;
+            }
+
             if (!userList.Any(u => u.Name == SignInText.Text))
             {
                 MessageBox.Show("Nome de usuário inexistente.");
@@ -46,7 +53,7 @@ namespace WpfApp
 
         private void signupButton_Click(object sender, RoutedEventArgs e)
         {
-            if (userList.Any(u => u.Name == SignUpText.Text))
+            if (userList.Any(u => u.Name == SignUpText.Text) | SignUpText.Text == "admin")
             {
                 MessageBox.Show("Nome de usuário já existe. Por favor, escolha outro nome de usuário.");
                 return;

@@ -28,6 +28,9 @@
     <Page Update="loginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="adminPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="WordListComponent.xaml">
       <SubType>Designer</SubType>
     </Page>

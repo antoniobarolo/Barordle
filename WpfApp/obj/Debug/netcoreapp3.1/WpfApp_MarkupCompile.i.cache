@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\App.xaml
-61717498201
+71556876729
 
-11-381800363
+121939006281
 192-1533232326
-GameScreen.xaml;LeaderboardComponent.xaml;loginPage.xaml;MainWindow.xaml;userPage.xaml;WordListComponent.xaml;
+adminPage.xaml;GameScreen.xaml;LeaderboardComponent.xaml;loginPage.xaml;MainWindow.xaml;userPage.xaml;WordListComponent.xaml;
 
 True
 

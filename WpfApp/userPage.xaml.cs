@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 
 namespace WpfApp
 {
-    /// <summary>
-    /// Interação lógica para userPage.xam
-    /// </summary>
     public partial class userPage : Page, INotifyPropertyChanged
     
     {
+    
+        
         private User currentUser;
         public userPage(User user)
         {
@@ -34,6 +33,8 @@ namespace WpfApp
             if(currentUser.GamesPlayed != 0) {
             percentageLabel.Content = (currentUser.Points * 100 / currentUser.GamesPlayed) + "% de vitória";
             }
+    
+           
         }
         
    
@@ -93,6 +94,21 @@ namespace WpfApp
         private void signOut_Click(object sender, RoutedEventArgs e)
         {
             NavigationService?.Navigate(new loginPage());
+        }
+
+        private void LeaderboardComponent_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            var leaderboardComponent = (LeaderboardComponent)sender;
+            List<User> userList;
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            userList = mainWindow.userList;
+            foreach(User u in userList)
+            {
+                if(u.Points !=0) u.PercentageWin = u.Points * 100 / u.GamesPlayed;
+                else u.PercentageWin = 0;
+            }
+            leaderboardComponent.UserList = userList;
+      
         }
     }
 }

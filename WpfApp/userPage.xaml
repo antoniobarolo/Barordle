@@ -3,10 +3,11 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfApp"
+      xmlns:local="clr-namespace:WpfApp" d:DataContext="{d:DesignInstance Type=local:User}"
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="800"
-      Title="userPage">
+      Title="userPage"
+      >
 
     <Grid>
         <Label x:Name="userGreet" Content="Olá, usuário." HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="223" FontSize="36" Margin="0,0
@@ -19,7 +20,8 @@
         <Button x:Name="toGameScreen" Content="Tela de Jogo -&gt;" HorizontalAlignment="Left" Margin="694,10,0,0" VerticalAlignment="Top" Height="34" Width="96" Click="toGameScreen_Click" IsDefault="True"/>
         <Button x:Name="signOut1" Content="Sair" HorizontalAlignment="Left" Margin="694,427,0,0" VerticalAlignment="Top" Height="34" Width="96" Click="signOut_Click"/>
         <Label x:Name="percentageLabel" Content="0% de vitória" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="140" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="419,10,0,0"/>
-    
+        <local:WordListComponent Words="{Binding Words}" Loaded="WordListComponent_Loaded_1" Margin="319,180,281,0"/>
+        <local:LeaderboardComponent Loaded="LeaderboardComponent_Loaded_1" Margin="18,116,506,10"/>
 
     </Grid>
 </Page>

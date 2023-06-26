@@ -11,9 +11,11 @@ namespace WpfApp
         public string Name { get; set; }
         
         public int Points { get; set; }
-
         public int GamesPlayed { get; set; }
+
+        public int? PercentageWin { get; set; }
         public List<string> Words { get; set; }
+
 
         private static List<string> defaultWords = new List<string> { "JORGE", "ARANA", "TESTE" };
 
@@ -31,5 +33,21 @@ namespace WpfApp
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
+        {
+            if (!Equals(field, newValue))
+            {
+                field = newValue;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                return true;
+            }
+
+            return false;
+        }
+
+        private List<User> users;
+
+        public List<User> Users { get => users; set => SetProperty(ref users, value); }
     }
 }

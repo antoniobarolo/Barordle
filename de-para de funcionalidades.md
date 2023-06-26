@@ -18,7 +18,7 @@ ok    consulta = testar palavra no jogo
 ok    filtrar = feedback com cor verde, amarela ou nenhuma para cada letra
 
 # Geração de relatórios, com a possibilidade de gerar relatórios de vendas por período, por cliente ou por produto.
-    Leaderboard de todos jogadores e de pontuações individuais
+ok    Leaderboard de todos jogadores e de pontuações individuais
 
 # Edição e exclusão de produtos, clientes e vendas realizadas.
     CRUD de palavras e CRUD de contas pelo login 'admin'.

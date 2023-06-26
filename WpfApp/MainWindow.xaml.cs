@@ -27,6 +27,7 @@ namespace WpfApp
             InitializeComponent();
             userList.Add(new User(name: "admin"));
             mainFrame.Navigate(new loginPage());
+            
         }
     }
 }

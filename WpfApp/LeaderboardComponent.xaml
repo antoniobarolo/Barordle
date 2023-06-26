@@ -7,16 +7,25 @@
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListBox ItemsSource="{Binding Users}">
-            <ListBox.ItemTemplate>
+        <ItemsControl ItemsSource="{Binding UserList, RelativeSource={RelativeSource AncestorType=UserControl}}">
+            <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Name}" Margin="5"/>
-                        <TextBlock Text="{Binding Points}" Margin="5"/>
-                        <TextBlock Text="{Binding GamesPlayed}" Margin="5"/>
+                        <Label Content="Nome:" Margin="-5" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        <Label Content="{Binding Name}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Label Content="" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Label Content="{Binding Points}" Margin="-8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Label Content="Pontos" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Label Content="" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        <Label Content="{Binding PercentageWin}" Margin="-8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Label Content="% de vitória" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
                     </StackPanel>
                 </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </UserControl>

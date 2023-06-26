@@ -88,3 +88,5 @@ D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\Genera
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\userPage.baml
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\loginPage.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\loginPage.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LeaderboardComponent.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\LeaderboardComponent.g.cs

@@ -19,6 +19,7 @@ namespace WpfApp
         public static readonly DependencyProperty WordsProperty =
             DependencyProperty.Register("Words", typeof(List<string>), typeof(WordListComponent), new PropertyMetadata(null));
 
+
         public List<string> Words
         {
             get { return (List<string>)GetValue(WordsProperty); }
@@ -28,6 +29,7 @@ namespace WpfApp
         public WordListComponent()
         {
             InitializeComponent();
+           
         }
 
         private void RemoveButton_Click(object sender, RoutedEventArgs e)

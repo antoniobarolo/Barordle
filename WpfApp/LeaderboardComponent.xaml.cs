@@ -13,18 +13,20 @@ using System.Windows.Shapes;
 
 namespace WpfApp
 {
-    /// <summary>
-    /// Interação lógica para LeaderboardComponent.xaml
-    /// </summary>
     public partial class LeaderboardComponent : UserControl
     {
-        public List<User> Users { get; set; }
+        public static readonly DependencyProperty UserListProperty =
+          DependencyProperty.Register("UserList", typeof(List<User>), typeof(LeaderboardComponent), new PropertyMetadata(null));
 
+        public List<User> UserList
+        {
+            get { return (List<User>)GetValue(UserListProperty); }
+            set { SetValue(UserListProperty, value); }
+        }
+        
         public LeaderboardComponent()
         {
             InitializeComponent();
-            Users = new List<User>(); // Inicialize a lista de usuários aqui
-            DataContext = this;
         }
     }
 }

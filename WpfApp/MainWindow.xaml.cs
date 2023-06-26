@@ -21,41 +21,12 @@ namespace WpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<User> userList = new List<User>();
+        public List<User> userList = new List<User>();
         public MainWindow()
         {
-            userList.Add(new User(name: "admin"));
             InitializeComponent();
-        }
-        private void loginButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (!userList.Any(u => u.Name == SignInText.Text))
-            {
-                MessageBox.Show("Nome de usuário inexistente.");
-                return;
-            }
-             
-            MessageBox.Show("Login com sucesso!");
-            
-            this.Content = new userPage(userList.FirstOrDefault(u => u.Name == SignInText.Text));
-
-        }
-
-        private void signupButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (userList.Any(u => u.Name == SignUpText.Text))
-            {
-                MessageBox.Show("Nome de usuário já existe. Por favor, escolha outro nome de usuário.");
-                return;
-            }
-
-            User newUser = new User(name: SignUpText.Text);
-            userList.Add(newUser);
-
-
-            MessageBox.Show("Usuário criado com sucesso!");
-
+            userList.Add(new User(name: "admin"));
+            mainFrame.Navigate(new loginPage());
         }
     }
 }
-

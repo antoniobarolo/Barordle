@@ -86,3 +86,5 @@ D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\userPa
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\WordListComponent.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\userPage.baml
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\loginPage.g.cs
+D:\Trabalhos\7o-semestre\4bdotnet\Barordle\WpfApp\obj\Debug\netcoreapp3.1\loginPage.baml

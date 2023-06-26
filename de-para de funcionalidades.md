@@ -9,9 +9,9 @@ ok    Validação do sign up - o nome de usuário não pode já existir.
 ok    Validação de sign in - o nome de usuário precisa já existir.
 
 # Registro de vendas, incluindo o cálculo do valor total da venda e a atualização do estoque de produtos.
-    Registro de palavras no banco, que depois é utilizada no jogo.
-    Calculo do valor = Implementação das palavras no jogo
-    Atualização = geracao de pontuacao após o jogo e soma de pontuacao do jogador.
+ok    Registro de palavras na lista, que depois é utilizada no jogo.
+ok    Calculo do valor = Implementação das palavras no jogo
+ok   Atualização = geracao de pontuacao após o jogo e soma de pontuacao do jogador.
 
 # Consulta de vendas realizadas, com a possibilidade de filtrar por data, cliente ou produto.
 ok    consulta = testar palavra no jogo

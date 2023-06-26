@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -24,18 +25,22 @@ namespace WpfApp
         private User currentUser;
         public userPage(User user)
         {
-            currentUser = user;
+           
             InitializeComponent();
+            currentUser = user;
             DataContext = user;
             userGreet.Content = "Olá, " + currentUser.Name;
-          
+            pointLabel.Content = currentUser.Points + " pontos";
+            if(currentUser.GamesPlayed != 0) {
+            percentageLabel.Content = (currentUser.Points * 100 / currentUser.GamesPlayed) + "% de vitória";
+            }
         }
         
    
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             // Verifica se o caractere digitado é uma letra do alfabeto
-            if (!char.IsLetter(e.Text, 0))
+            if (!char.IsLetter(e.Text, 0) && !Regex.IsMatch(e.Text, @"^[a-zA-Z]+$"))
             {
                 // Define o evento como manipulado para impedir a digitação do caractere
                 e.Handled = true;
@@ -44,14 +49,26 @@ namespace WpfApp
 
         private void newWordButton_Click(object sender, RoutedEventArgs e)
         {
+            if(newWordText.Text.Length != 5)
+            {
+                MessageBox.Show("Palavra deve ter exatamente 5 letras");
+                newWordText.Text = string.Empty;
+                return;
+            }
             MessageBox.Show("Palavra criada!");
-            currentUser.Words.Add(newWordText.Text);
+            currentUser.Words.Add(newWordText.Text.ToUpper());
             newWordText.Text = string.Empty;
 
-            OnPropertyChanged(nameof(currentUser.Words));
-   
-            MessageBox.Show(currentUser.Words.Last());
+            Reload();
+
         }
+
+        public void Reload()
+        {
+            NavigationService?.Navigate(new userPage(currentUser));
+        }
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
@@ -69,8 +86,13 @@ namespace WpfApp
 
         private void toGameScreen_Click(object sender, RoutedEventArgs e)
         {
-            this.Content = new GameScreen(User);
+
+            NavigationService?.Navigate(new GameScreen(currentUser));
         }
 
+        private void signOut_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new loginPage());
+        }
     }
 }

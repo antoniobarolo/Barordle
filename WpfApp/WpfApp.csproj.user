@@ -5,6 +5,12 @@
     <Compile Update="GameScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="LeaderboardComponent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="loginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WordListComponent.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,6 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="GameScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LeaderboardComponent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="loginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WordListComponent.xaml">

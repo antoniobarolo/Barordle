@@ -6,15 +6,7 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
-    <Grid Height="500">
-        <Frame x:Name="mainFrame"/>
-        <Label x:Name="LoginTitle" Content="Insira seu login" HorizontalAlignment="Left" Height="43" Margin="175,153,0,0" VerticalAlignment="Top" Width="152" FontFamily="Comic Sans MS" FontSize="18"/>
-        <Label x:Name="nome" Content="Barordle" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="300" HorizontalContentAlignment="Center" FontSize="36" Margin="0,10,0,0"/>
-        <Button x:Name="loginButton" Content="Entrar" HorizontalAlignment="Left" Margin="522,158,0,0" VerticalAlignment="Top" FontSize="18" Height="34" Width="110" Click="loginButton_Click"/>
-        <TextBox x:Name="SignInText" HorizontalAlignment="Left" Height="34" Margin="332,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="24"  TextAlignment="Center"/>
-        <Label x:Name="SignUpTitle" Content="Crie uma conta" HorizontalAlignment="Left" Height="43" Margin="175,212,0,0" VerticalAlignment="Top" Width="152" FontFamily="Comic Sans MS" FontSize="18"/>
-        <Button x:Name="signupButton" Content="Criar" HorizontalAlignment="Left" Margin="522,217,0,0" VerticalAlignment="Top" FontSize="18" Height="34" Width="110" Click="signupButton_Click"/>
-        <TextBox x:Name="SignUpText" HorizontalAlignment="Left" Height="34" Margin="332,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="24"  TextAlignment="Center"/>
-
+    <Grid>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

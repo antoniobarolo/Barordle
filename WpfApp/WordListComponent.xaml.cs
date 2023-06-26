@@ -42,9 +42,23 @@ namespace WpfApp
                 OnPropertyChanged(nameof(Words));
             }
 
+            userPage parentPage = FindParentPage();
+            parentPage?.Reload();
             
-            //MessageBox.Show(Words.Count.ToString());
         }
+
+        private userPage FindParentPage()
+        {
+            DependencyObject parent = VisualTreeHelper.GetParent(this);
+
+            while (parent != null && !(parent is userPage))
+            {
+                parent = VisualTreeHelper.GetParent(parent);
+            }
+
+            return parent as userPage;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {

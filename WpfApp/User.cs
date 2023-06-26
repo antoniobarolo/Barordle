@@ -12,16 +12,8 @@ namespace WpfApp
         
         public int Points { get; set; }
 
-        private List<string> words;
-        public List<string> Words
-        {
-            get { return words; }
-            set
-            {
-                words = value;
-                OnPropertyChanged(nameof(Words));
-            }
-        }
+        public int GamesPlayed { get; set; }
+        public List<string> Words { get; set; }
 
         private static List<string> defaultWords = new List<string> { "JORGE", "ARANA", "TESTE" };
 
@@ -29,6 +21,7 @@ namespace WpfApp
         {
             Name = name;
             Points = 0;
+            GamesPlayed = 0;
             Words = new List<string>(defaultWords);
         }
 

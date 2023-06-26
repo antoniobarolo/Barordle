@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -42,7 +43,7 @@ namespace WpfApp
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             // Verifica se o caractere digitado é uma letra do alfabeto
-            if (!char.IsLetter(e.Text, 0))
+            if (!char.IsLetter(e.Text, 0) && !Regex.IsMatch(e.Text, @"^[a-zA-Z]+$"))
             {
                 // Define o evento como manipulado para impedir a digitação do caractere
                 e.Handled = true;
@@ -65,9 +66,8 @@ namespace WpfApp
 
             switch (lives)
             {
-                case 0:
-                    gameOn = false;
-                    return;
+               
+                    
                 case 1:
                     currentText[0] = L51;
                     currentText[1] = L52;
@@ -122,6 +122,35 @@ namespace WpfApp
 
             if (guess != answer)
                 lives--;
+
+            if(lives <= 0)
+            {
+                gameOn = false;
+                currentUser.GamesPlayed++;
+                MessageBox.Show("Você perdeu.");
+            }
+
+            if(guess == answer)
+            {
+                currentUser.GamesPlayed++;
+                currentUser.Points++;
+                MessageBox.Show("Você venceu!");
+            }
+        }
+
+        private void restart_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new GameScreen(currentUser));
+        }
+
+        private void signOut_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new loginPage());
+        }
+
+        private void toUserPage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new userPage(currentUser));
         }
     }
 }

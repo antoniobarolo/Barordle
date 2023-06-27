@@ -17,7 +17,7 @@ namespace WpfApp
         public List<string> Words { get; set; }
 
 
-        private static List<string> defaultWords = new List<string> { "JORGE", "ARANA", "TESTE" };
+        private static List<string> defaultWords = new List<string> { "SAGAZ", "TERMO", "TESTE", "NOBRE", "AFETO", "VIGOR", "IDEIA", "CARNE", "SONHO", "ICONE", "HONRA", "MUITO", "PODER", "VINHO", "METAL", "LOUCO", "IMPOR", "DENSO", "CULTO"};
 
         public User(string name)
         {

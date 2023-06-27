@@ -6,15 +6,17 @@
              mc:Ignorable="d"
              d:DesignHeight="500" d:DesignWidth="800">
     <Grid>
-        <ItemsControl ItemsSource="{Binding Words}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding Words}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate >
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="{Binding}" Margin="10"/>
+                        <Label Content="{Binding}" Margin="5"/>
                         <Button Content="X" Click="RemoveButton_Click" Tag="{Binding}" Width="20" Height="20"/>
                     </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </UserControl>
